@@ -3,7 +3,7 @@
 This Excel file contains stock data spanning multiple years. I've developed a macro named "Yearly_analysis" that streamlines the process of separating and analyzing the dataset for each year with a single click.
 
 # Instructions
-The script is divided into two primary sections:
+The script is divided into two sections:
 
 # Creation of List:
 # Separation of Tickers: 
