@@ -7,28 +7,28 @@ To start the macro press the button on the first page, or run it from the develo
 The script is divided into two sections:
 
 # Creation of List:
-# Separation of Tickers: 
+1 - Separation of Tickers: 
   This step categorizes each ticker, representing a specific stock, and creating a separate list. 
-# Yearly change:  
+2 - Yearly change:  
   It determines the difference between the opening price at the beginning of a given year and the closing price at the end   of that year.
-# Percentage Change: 
+3 - Percentage Change: 
   it computes the percentage change from the opening price at the start of a year to the closing price at the end of that year.
-# Total Stock Volume: 
+4 - Total Stock Volume: 
   it calculates the total stock volume of each stock.
 
 # Analysis of Dataset:
-# Conditional Formatting: 
+1 - Conditional Formatting: 
   The script performs conditional formatting to highlight positive changes in green and negative changes in red within the yearly change column.
-# Identification of Extremes: 
+2 - Identification of Extremes: 
   It identifies both the maximum and minimum values in the percentage change column, reporting the respective stock tickers and their associated values.
-# Highest Total Stock Volume: 
+3 - Highest Total Stock Volume: 
   the script identifies and reports the stock ticker and value of the highest total stock volume for each year.
 
 # Note
 Upon running the script, a message box will appear, prompting you to confirm whether you'd like to proceed with the analysis:
-# Click "Yes" 
+- Click "Yes" 
 to perform an in-depth analysis of the dataset.
-# Click "No" 
+- Click "No" 
 to generate only a list of the stock data without performing additional analysis.
 
 The analysis is set for the period from January 2nd to December 31st
