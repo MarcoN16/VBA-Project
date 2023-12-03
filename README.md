@@ -9,18 +9,23 @@ The script is divided into two sections:
 # Creation of List:
 1 - Separation of Tickers: 
   This step categorizes each ticker, representing a specific stock, and creating a separate list. 
+  
 2 - Yearly change:  
   It determines the difference between the opening price at the beginning of a given year and the closing price at the end   of that year.
+  
 3 - Percentage Change: 
   it computes the percentage change from the opening price at the start of a year to the closing price at the end of that year.
+  
 4 - Total Stock Volume: 
   it calculates the total stock volume of each stock.
 
 # Analysis of Dataset:
 1 - Conditional Formatting: 
   The script performs conditional formatting to highlight positive changes in green and negative changes in red within the yearly change column.
+  
 2 - Identification of Extremes: 
   It identifies both the maximum and minimum values in the percentage change column, reporting the respective stock tickers and their associated values.
+  
 3 - Highest Total Stock Volume: 
   the script identifies and reports the stock ticker and value of the highest total stock volume for each year.
 
