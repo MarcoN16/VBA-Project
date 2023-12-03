@@ -32,7 +32,7 @@ The script is divided into two sections:
 # Note
 Upon running the script, a message box will appear, prompting you to confirm whether you'd like to proceed with the analysis:
 - Click "Yes" 
-to perform an in-depth analysis of the dataset.
+to perform the analysis of the dataset.
 - Click "No" 
 to generate only a list of the stock data without performing additional analysis.
 
