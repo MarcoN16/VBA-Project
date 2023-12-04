@@ -4,6 +4,7 @@ Sub Yearly_analysis()
 Dim ticker As String
 Dim lastRow As Double
 Dim lastRow2 As Double
+dim lastRow3 as Double
 Dim open_value As Double
 Dim close_value As Double
 Dim yearly_change As Double
@@ -31,17 +32,17 @@ Dim Rng As Variant
 Dim Rng2 As Variant
 Dim Rng3 As Variant
 
-'Worksheet creation list
+'Worksheet list creation 
 
 For Each ws In Worksheets
 ' Initial Variables
-    row_tab = 2
+    row_tab = 2 'row of the new list
     j = 2
     i = 2
     max_value = 0
     min_value = 0
     max_volume = 0
-    lastRow = ws.Cells(Rows.Count, 1).End(xlUp).Row
+    lastRow = ws.Cells(Rows.Count, 1).End(xlUp).Row     'counting rows for the values to check
     date_start = "0102"
     date_end = "1231"
     ws.Cells(1, 9).Value = "Ticker"
@@ -85,7 +86,7 @@ For Each ws In Worksheets
    response = MsgBox("Would you like to analyze this data set " & ws.Name & "?", vbYesNo)
    If response = vbYes Then
    
-    lastRow2 = ws.Cells(Rows.Count, 9).End(xlUp).Row
+    lastRow2 = ws.Cells(Rows.Count, 9).End(xlUp).Row  ' coutning rows for the new list created
     ws.Cells(1, 16).Value = "Ticker"
     ws.Cells(1, 17).Value = "Value"
     ws.Cells(2, 15).Value = "Greatest % Increase"
@@ -127,7 +128,6 @@ For Each ws In Worksheets
     ws.Cells(3, 17).Value = min_value   'Greatest % Decrease value
     ws.Cells(4, 16).Value = max_volume_ticker  'Greatest % stock volume name
     ws.Cells(4, 17).Value = max_volume         'Greatest % stock volume value
-    lastRow3 = ws.Cells(Rows.Count, 9).End(xlUp).Row
     Set Rng = ws.Range("K2:K" & lastRow2)
     Rng.NumberFormat = "0.00%"
     Set Rng2 = ws.Range("Q2:Q3")
