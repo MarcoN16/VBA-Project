@@ -1,9 +1,9 @@
 # Multiple Year Stock Data Analysis
 
 This Excel file contains stock data spanning multiple years. I've developed a macro that streamlines the process of separating and analyzing the dataset for each spreadsheet(year) with a single click.
-To start the macro press the button on the first page, or run it from the developer tab
 
 # Instructions
+To start the macro press the button on the first page, or run it from the developer tab
 The script is divided into two sections:
 
 # Creation of List:
